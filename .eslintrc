@@ -12,6 +12,7 @@
     }
   },
   "extends": [
+    "prettier",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime",
     "plugin:react-hooks/recommended",
@@ -19,15 +20,7 @@
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": ["simple-import-sort"],
-  "ignorePatterns": [
-    "src/vite-env.d.ts",
-    "node_modules/",
-    "dist/",
-    "jest.config.js",
-    "jest.setup.js",
-    "**/*.spec.*",
-    "*.html"
-  ],
+  "ignorePatterns": ["src/vite-env.d.ts", "node_modules/", "dist/", "jest.config.js", "jest.setup.js", "**/*.spec.*", "*.html"],
   "rules": {
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
